@@ -1,0 +1,15 @@
+[
+  {
+    "id": "lacobra",
+    "nombre": "LA COBRA",
+    "imagen": "/img/cobra.png",
+    "activa": true
+
+  },
+  {
+    "id": "alonso",
+    "nombre": "ALONSO",
+    "imagen": "/img/alonso.png",
+    "activa": true
+  }
+]

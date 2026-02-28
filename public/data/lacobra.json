@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "BOEEE",
+    "imagen": "/pj/1/1.png",
+    "audio": "/pj/1/BOEEE.mp3"
+  },
+  {
+    "id": 2,
+    "nombre": "MEGA BOE",
+    "imagen": "/pj/1/2.png",
+    "audio": "/pj/1/megaBOE.mp3"
+  },
+  {
+    "id": 3,
+    "nombre": "EL ACABADO",
+    "imagen": "/pj/1/3.png",
+    "audio": "/pj/1/el acabado.mp3"
+  }
+]
