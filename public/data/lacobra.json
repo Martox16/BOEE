@@ -16,5 +16,41 @@
     "nombre": "EL ACABADO",
     "imagen": "/pj/1/3.png",
     "audio": "/pj/1/el acabado.mp3"
+  },
+  {
+    "id": 4,
+    "nombre": "QUE MANDAN",
+    "imagen": "/pj/1/4.png",
+    "audio": "/pj/1/que mandan.mp3"
+  },
+  {
+    "id": 5,
+    "nombre": "SALE ALIANZA",
+    "imagen": "/pj/1/5.png",
+    "audio": "/pj/1/sale alianza.mp3"
+  },
+  {
+    "id": 6,
+    "nombre": "NO BAYERN",
+    "imagen": "/pj/1/6.png",
+    "audio": "/pj/1/no bayern.mp3"
+  },
+  {
+    "id": 7,
+    "nombre": "PURE DE PAPA",
+    "imagen": "/pj/1/7.png",
+    "audio": "/pj/1/pure de papa.mp3"
+  },
+  {
+    "id": 8,
+    "nombre": "QUIERO QUEQUE",
+    "imagen": "/pj/1/8.png",
+    "audio": "/pj/1/quiero queque.mp3"
+  },
+  {
+    "id": 9,
+    "nombre": "COLE PALMER",
+    "imagen": "/pj/1/9.png",
+    "audio": "/pj/1/cole palmer.mp3"
   }
 ]
