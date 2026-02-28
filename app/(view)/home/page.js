@@ -9,6 +9,10 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <div className={styles.banner}>
+        <h1 className={styles.title}>B O E E E 🗣️🗣️</h1>
+      </div>
+
       <div className={styles.row}>
         {personas.map((persona) => (
           <button

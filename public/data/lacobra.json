@@ -52,5 +52,47 @@
     "nombre": "COLE PALMER",
     "imagen": "/pj/1/9.png",
     "audio": "/pj/1/cole palmer.mp3"
+  },
+  {
+    "id": 10,
+    "nombre": "MILLONARIO",
+    "imagen": "/pj/1/10.png",
+    "audio": "/pj/1/millonario.mp3"
+  },
+  {
+    "id": 11,
+    "nombre": "BOCA ROBO",
+    "imagen": "/pj/1/11.png",
+    "audio": "/pj/1/boca robo.mp3"
+  },
+  {
+    "id": 12,
+    "nombre": "1v4",
+    "imagen": "/pj/1/12.png",
+    "audio": "/pj/1/pibas.mp3"
+  },
+  {
+    "id": 13,
+    "nombre": "CUALIDADES",
+    "imagen": "/pj/1/13.png",
+    "audio": "/pj/1/cualidades.mp3"
+  },
+  {
+    "id": 14,
+    "nombre": "KUNFUPANZA",
+    "imagen": "/pj/1/14.png",
+    "audio": "/pj/1/kunfupanza.mp3"
+  },
+  {
+    "id": 15,
+    "nombre": "LUCHO DIAZ",
+    "imagen": "/pj/1/15.png",
+    "audio": "/pj/1/lucho diaz.mp3"
+  },
+  {
+    "id": 16,
+    "nombre": "BENZEMA",
+    "imagen": "/pj/1/16.png",
+    "audio": "/pj/1/benzema.mp3"
   }
 ]

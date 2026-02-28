@@ -40,7 +40,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -86,8 +86,8 @@
 
 .dotsBtn {
   position: absolute;
-  bottom: 10px;   /* 👇 abajo */
-  right: 10px;    /* 👉 derecha */
+  bottom: 10px;   
+  right: 10px;    
   width: 32px;
   height: 32px;
   border: none;
@@ -137,9 +137,6 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* ========================= */
-/*   RESPONSIVE             */
-/* ========================= */
 
 @media (max-width: 768px) {
   .card {

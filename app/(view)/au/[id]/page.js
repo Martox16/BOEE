@@ -16,8 +16,6 @@ export default function PersonaPage() {
 
   const [audios, setAudios] = useState([]);
   const [currentId, setCurrentId] = useState(null);
-
-  // ✅ menú de 3 puntitos abierto (por id de audio)
   const [menuOpenId, setMenuOpenId] = useState(null);
 
   const audioRef = useRef(null);
@@ -47,6 +45,7 @@ export default function PersonaPage() {
       .catch(() => setAudios([]));
   }, [id, persona]);
 
+  // pausar 
   const handlePlay = (audio) => {
     if (currentId === audio.id) {
       audioRef.current?.pause();
@@ -64,29 +63,56 @@ export default function PersonaPage() {
     newAudio.onended = () => setCurrentId(null);
   };
 
-  // ✅ descargar audio
+  // descargar xd
   const handleDownload = (audio) => {
     const link = document.createElement("a");
-    link.href = audio.audio; // ruta del mp3/wav
-    link.download = `${audio.nombre || "audio"}.mp3`; // si querés, después lo hacemos según extensión real
+    link.href = audio.audio;
+
+    const extension = audio.audio.split(".").pop();
+    link.download = `${audio.nombre || "audio"}.${extension}`;
+
     document.body.appendChild(link);
     link.click();
     link.remove();
+
     setMenuOpenId(null);
   };
 
-  // cerrar menú al tocar afuera
   useEffect(() => {
     const close = () => setMenuOpenId(null);
     window.addEventListener("click", close);
     return () => window.removeEventListener("click", close);
   }, []);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current.src = "";
+      audioRef.current = null;
+      setCurrentId(null);
+    }
+  }, [id]);
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+        audioRef.current.src = "";
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
   if (!persona || persona.activa === false) return null;
 
   return (
     <div className={styles.container}>
-      <button className={styles.backButton} onClick={() => router.push("/")}>
+      <button
+        className={styles.backButton}
+        onClick={() => router.push("/")}
+      >
         ← Volver
       </button>
 
@@ -104,23 +130,22 @@ export default function PersonaPage() {
                 onClick={() => handlePlay(audio)}
               />
 
-              {/* ✅ 3 puntitos al borde izquierdo */}
               <button
                 className={styles.dotsBtn}
                 onClick={(e) => {
-                  e.stopPropagation(); // no dispara el play
-                  setMenuOpenId((prev) => (prev === audio.id ? null : audio.id));
+                  e.stopPropagation();
+                  setMenuOpenId((prev) =>
+                    prev === audio.id ? null : audio.id
+                  );
                 }}
-                aria-label="Opciones"
               >
                 ⋮
               </button>
 
-              {/* ✅ menú */}
               {menuOpenId === audio.id && (
                 <div
                   className={styles.menu}
-                  onClick={(e) => e.stopPropagation()} // no cerrar al click dentro
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <button
                     className={styles.menuItem}
