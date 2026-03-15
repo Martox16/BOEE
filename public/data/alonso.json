@@ -3,12 +3,30 @@
         "id": 1,
         "nombre": "MANTECA",
         "imagen": "/pj/2/1.png",
-        "audio": "/pj/2/MANTECA.mp3"
+        "audio": "/pj/2/manteca.mp3"
     },
     {
         "id": 2,
         "nombre": "MANTECOSA",
         "imagen": "/pj/2/2.png",
         "audio": "/pj/2/mantecosa.mp3"
+    },
+    {
+        "id": 3,
+        "nombre": "YETS",
+        "imagen": "/pj/2/3.png",
+        "audio": "/pj/2/yets.mp3"
+    },
+    {
+        "id": 4,
+        "nombre": "FRASE",
+        "imagen": "/pj/2/4.png",
+        "audio": "/pj/2/frase.mp3"
+    },
+    {
+        "id": 5,
+        "nombre": "TENIA EFECTIVO",
+        "imagen": "/pj/2/5.png",
+        "audio": "/pj/2/tenia efectivo.mp3"
     }
 ]
