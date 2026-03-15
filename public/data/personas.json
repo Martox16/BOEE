@@ -10,6 +10,12 @@
     "id": "alonso",
     "nombre": "ALONSO",
     "imagen": "/img/alonso.png",
+    "activa": true
+  },
+  {
+    "id": "davo",
+    "nombre": "DAVO",
+    "imagen": "/img/davo.png",
     "activa": false
   }
 ]

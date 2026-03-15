@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nombre": "MANTECA",
+        "imagen": "/pj/2/1.png",
+        "audio": "/pj/2/MANTECA.mp3"
+    },
+    {
+        "id": 2,
+        "nombre": "MANTECOSA",
+        "imagen": "/pj/2/2.png",
+        "audio": "/pj/2/mantecosa.mp3"
+    }
+]
